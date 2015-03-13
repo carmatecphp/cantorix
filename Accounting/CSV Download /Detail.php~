@@ -1,0 +1,14 @@
+<?php 
+
+Step 1. Install the plugin into your app/Plugin/Export directory
+        Download it from https://github.com/joshuapaling/CakePHP-Export-CSV-Plugin
+
+/***** CSV file Download(app/Controller/Controller.php *******/ 
+
+       CakePlugin::load('Export');
+
+
+
+
+
+?>
