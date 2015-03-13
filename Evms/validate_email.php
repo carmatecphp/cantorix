@@ -3,8 +3,7 @@
 		if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/",$email))
 		{
 			return 'Invalid';
-		}else{
-		
+		}else{		
 			return 'Valid';
 		}
 
