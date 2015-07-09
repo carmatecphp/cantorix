@@ -1,0 +1,161 @@
+ Basic Steps in SEO implementation
+
+Step 1: Choose Keywords
+
+People are searching for your products and services, but they may be using words you're not anticipating. That's where keyword research comes in. It allows you to understand the ways your customers are searching. For example, if you sell footwear, you might assume people are searching for your products using that word. But are they also using other words?
+
+The Google AdWords Keyword Tool can show you this. You can enter a word and see how often people search for that word and related ones. Using the tool, I can discover that people do search for "footwear"—30 million searches per month for that word. But nearly 70 million are using the word "shoes." That's important to understand, because if you're only talking about "footwear" on your site, you may be missing all those people interested in "shoes."
+
+ 
+
+Step 2: Page Title
+
+The page title appears as the blue, bolded, underlined text on a Google search results page, and also on the top left the browser bar. The page title should follow these guidelines:
+
+ 
+
+    Be under 70 characters with no more than two long-tail keywords per page title .
+    The primary keyword should appear first .
+    Each keyword phrase should be separated by pipes (|) .
+    Each page title on your website should be unique .
+    Except for your homepage and contact us page, each page title should NOT include your business name.
+
+Ex :-
+
+<title> Metrics Web Analytics – Event Tracking, A/B Testing and Conversion Funner Software </title>
+
+ 
+
+Step 3: Meta Description
+
+The meta description appears on a Google search results page under the Page Title. The meta description helps people decide whether to click on your result, or a result above or below you. Think of it as a call to action. The meta description should follow these guidelines:
+
+ 
+
+    Be under 150 characters (but not under 100 characters; take advantage of the space you have)
+
+    Incorporate the primary keyword and at least one secondary keyword
+
+    Provide a valuable, compelling reason for why someone should visit the page
+
+    Include keywords in a conversational format; don’t just cram in keywords for the sake of listing them 
+
+
+
+The best examples of meta descriptions and how search engines use them come from search engines themselves. Let’s look at Google’s own meta description for starters.
+
+    <meta name=”description” content=”Search the world’s information, including web pages, images, videos and more. Google has many special features to help you find exactly what you’re looking for.“>
+
+It is exactly 159 characters, including spaces. Google’s meta description is displayed as follows in the Search engine.
+
+Step 4: URL
+
+The website page’s URL should include the primary keyword. Each word in the URL should be separated using
+
+dashes (-).
+
+Ex :-
+
+www.examplesite.com/inbound-marketing-software
+
+Step 5: Heading Tags
+
+The page should have one H1 heading tag that incorporates the primary keyword, and should align with the page title and the URL or the page. This H1 tag should appear at the top of the page and should be the first thing people see when they arrive on a page.
+
+Step 6: Page Content
+
+ 
+
+Use your primary keyword a few times throughout the page’s content. Don’t overthink keyword density or placement, you should mention them naturally. Try to bold or underline the keyword at least once. This has an effect on how relevant the keyword is to the page.
+
+ 
+
+Step 7: Internal Links
+
+ 
+
+If you mention the primary keyword of this page on other pages within your site, then link to this page using the primary keyword as the anchor text. For example, you should link to a page about inbound marketing software using the anchor text “inbound marketing software.” To make sure this is completed, take a moment to create one (1) or two (2) links on related pages that link back to the page you’re optimizing.
+
+ 
+
+Step 8: Images
+
+Any images used on the page should be optimized so that search engines can “read” the image. Optimize the most prominent image on the page using the primary keyword, and then use the primary and secondary keywords for any other images. Images can be optimized in two ways:
+
+ 
+
+    File name: Each word should be separated with dashes (-), e.g. inbound-marketing-software.jpg
+
+    ALT text: The alt text should match the file name, without dashes, e.g. Inbound Marketing Software 
+
+ 
+
+If you are unable to change image file name or if it’s too time consuming, then only change the most
+
+ 
+
+prominent images’ alt text using the primary keyword. 
+
+ 
+
+For CakePHP Application :- 
+
+1. We need to create a sitemap xml in our application, which inturn is fetched by the webmaster to index the pages that are present in our application .
+
+ 
+
+Sample Xml content :-
+
+ 
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset
+
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+ 
+
+<url>
+
+  <loc>http://carmatec.com/</loc>
+
+  <lastmod>2015-06-09T07:39:05+00:00</lastmod>
+
+</url>
+
+<url>
+
+  <loc>http://carmatec.com/feed/</loc>
+
+  <lastmod>2015-06-23T07:35:23+00:00</lastmod>
+
+</url>
+
+<url>
+
+  <loc>http://carmatec.com/web-design-services/</loc>
+
+  <lastmod>2015-06-09T09:42:24+00:00</lastmod>
+
+</url>
+
+</urlset>
+
+ 
+
+ 
+
+Inorder to generate the xml file , we got few plugins in cakephp . Here i am listing few links 
+
+https://github.com/webtechnick/CakePHP-Seo-Plugin
+
+http://www.surya-alive.com/tutorial/how-to-create-dynamic-sitemap-xml-in-cakephp.htm

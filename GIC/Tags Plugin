@@ -1,0 +1,29 @@
+ 
+      The Tags plugin includes the TaggableBehavior that allows to tag everything.It saves all tags in a single tags table and connects any kind of records to them through the tagged table.This plugin works for cakephp 2.5+ and php 5.2.8.
+
+Steps to implement:
+
+1)https://github.com/CakeDC/tags : Download and add in app/plugins folder with folder name as Tags.
+
+2)https://github.com/cakedc/migrations : Download and add in app/plugins folder with folder name as Migrations. 
+
+3)To set up the **Tags** plugin tables run this command:
+  Console/cake migrations.migration run all -p Tags
+
+4)Load the plugins to application(bootstrap.php)
+  CakePlugin::loadAll();
+
+5)Add the behavior to model class.
+  <?php
+	  public $actsAs = array(
+		'Tags.Taggable'
+	  );
+  ?>
+
+6)In add and edit form add this input
+   <?php echo $this->Form->input('tags');?>
+
+
+
+  
+  

@@ -1,0 +1,17 @@
+Steps :
+
+1)Add the ImgComponent to app/Controller/Component/
+
+2)Include component in controller
+
+	<?php
+	    App::uses('AppController', 'Controller');
+	    class ProductsController extends AppController {
+
+                 public $components = array('Img');
+
+                 public function add() {
+
+                     $upload = $this->Img->upload($source_file,$target_directory,$file_name);
+                 }
+        }
